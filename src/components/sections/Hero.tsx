@@ -41,7 +41,7 @@ export function Hero({
         }`}
       >
         <div className="absolute inset-0 grid flex-grow grid-flow-col pointer-events-none auto-cols-fr -z-10 content-stretch overflow-clip">
-          {spread?.reference && (
+          {/* {spread?.reference && (
             <div className="">
               <SpreadMedia
                 scale={2}
@@ -70,20 +70,32 @@ export function Hero({
                 data={spreadSecondary.reference}
               />
             </div>
-          )}
+          )} */}
+          <Image
+            src="/images/ivy-wall-logo.jpg"
+            className="block object-cover w-full h-full"
+            width={5000}
+            height={3155}
+            alt="The Ivy hero"
+            loading={loading}
+          />
         </div>
         <div className="flex flex-col items-baseline justify-between gap-4 px-6 py-8 sm:px-8 md:px-12 bg-gradient-to-t dark:from-contrast/60 dark:text-primary from-primary/60 text-contrast">
-          {heading?.value && (
+          {/* {heading?.value && (
             <Heading format as="h2" size="display" className="max-w-md">
               {heading.value}
             </Heading>
-          )}
-          {byline?.value && (
+          )} */}
+          {/* {byline?.value && (
             <Text format width="narrow" as="p" size="lead">
               {byline.value}
             </Text>
-          )}
-          {cta?.value && <Text size="lead">{cta.value}</Text>}
+          )} */}
+          <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-5 sm:px-10 lg:p-5 lg:items-center">
+            <div className="text-white font-thin">
+              {cta?.value && <Text size="lead">{cta.value}</Text>}
+            </div>
+          </div>
         </div>
       </section>
     </Link>

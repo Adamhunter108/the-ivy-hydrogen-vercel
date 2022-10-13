@@ -3,42 +3,43 @@ const PLACEHOLDERS = {
   HEROS: [
     // primaryHero
     {
-      heading: {value: 'All Mountain All Season'},
+      heading: {value: 'The Ivy Long Beach, NY'},
       byline: {
-        value: 'The All New Hydrogen Snowboard Exclusively From Shopify',
+        value:
+          "Long Beach, NY's Premier Art / Event Space and Retail Experience",
       },
-      cta: {value: 'Shop Now →'},
+      cta: {value: 'Get lost in the Ivy →'},
       handle: 'freestyle',
       spread: {
         reference: {
           mediaContentType: 'IMAGE',
-          alt: 'Tracks in the snow leading to a person on a mountain top with a red jacket contrasting to an epic blue horizon with a mountain range in the distance.',
+          alt: 'Actual ivy.',
           previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: 'https://www.theivylbny.com/images/ivy-wall.jpg',
           },
           id: 'gid://shopify/MediaImage/29259478466616',
           image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
-            width: 2500,
+            url: 'https://www.theivylbny.com/images/ivy-wall.jpg',
+            width: 5000,
             height: 3155,
           },
         },
       },
-      spreadSecondary: {
-        reference: {
-          mediaContentType: 'IMAGE',
-          alt: 'A snowboarder standing on a mountain top in choppy snow, shows off the back of his snowboard which reads Hydrogen in a cursive script.',
-          previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
-          },
-          id: 'gid://shopify/MediaImage/29259478499384',
-          image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
-            width: 2500,
-            height: 3155,
-          },
-        },
-      },
+      // spreadSecondary: {
+      //   reference: {
+      //     mediaContentType: 'IMAGE',
+      //     alt: 'A snowboarder standing on a mountain top in choppy snow, shows off the back of his snowboard which reads Hydrogen in a cursive script.',
+      //     previewImage: {
+      //       url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+      //     },
+      //     id: 'gid://shopify/MediaImage/29259478499384',
+      //     image: {
+      //       url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_2.jpg?v=1654902468',
+      //       width: 2500,
+      //       height: 3155,
+      //     },
+      //   },
+      // },
       height: 'full',
       top: true,
       loading: 'eager',
