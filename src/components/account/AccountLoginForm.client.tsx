@@ -74,7 +74,7 @@ export function AccountLoginForm({shopName}: {shopName: string}) {
   return (
     <div className="flex justify-center my-24 px-4">
       <div className="max-w-md w-full">
-        <h1 className="text-4xl">Sign in.</h1>
+        <h1 className="font-thin text-4xl">Sign in to your account</h1>
         <form noValidate className="pt-6 pb-8 mt-4 mb-4" onSubmit={onSubmit}>
           {hasSubmitError && (
             <div className="flex items-center justify-center mb-6 bg-zinc-500">
@@ -176,16 +176,19 @@ function EmailField({
       </div>
       <div className="flex items-center justify-between">
         <button
-          className="bg-gray-900 rounded text-contrast py-2 px-4 focus:shadow-outline block w-full"
+          className="bg-neon-pink rounded text-contrast py-2 px-4 focus:shadow-outline block w-full"
           type="submit"
         >
-          Next
+          Sign in
         </button>
       </div>
       <div className="flex items-center mt-8 border-t  border-gray-300">
         <p className="align-baseline text-sm mt-6">
-          New to {shopName}? &nbsp;
-          <Link className="inline underline" to="/account/register">
+          New to The Ivy? &nbsp;
+          <Link
+            className="inline underline text-neon-pink"
+            to="/account/register"
+          >
             Create an account
           </Link>
         </p>

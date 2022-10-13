@@ -59,7 +59,7 @@ export function ProductCard({
           <Text
             as="label"
             size="fine"
-            className="absolute top-0 right-0 m-4 text-right text-notice"
+            className="absolute top-0 right-0 m-4 text-right text-notice font-thin"
           >
             {cardLabel}
           </Text>
@@ -83,7 +83,7 @@ export function ProductCard({
         </div>
         <div className="grid gap-1">
           <Text
-            className="w-full overflow-hidden whitespace-nowrap text-ellipsis "
+            className="w-full overflow-hidden whitespace-nowrap text-ellipsis"
             as="h3"
           >
             {product.title}

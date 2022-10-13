@@ -92,7 +92,7 @@ export function Hero({
             </Text>
           )} */}
           <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-5 sm:px-10 lg:p-5 lg:items-center">
-            <div className="text-white font-thin">
+            <div className="text-white font-thin px-3">
               {cta?.value && <Text size="lead">{cta.value}</Text>}
             </div>
           </div>

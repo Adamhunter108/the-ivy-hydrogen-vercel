@@ -36,10 +36,8 @@ export function Footer({menu}: {menu?: EnhancedMenu}) {
         </Heading>
         <CountrySelector />
       </section> */}
-      <div
-        className={`self-end pt-8 opacity-80 md:col-span-2 lg:col-span-${itemsCount}`}
-      >
-        <p className="opacity-50 text-sm">
+      <div className={`self-end pt-8 md:col-span-2 lg:col-span-${itemsCount}`}>
+        <p className="opacity-50 text-sm xl:text-center ">
           &copy; {new Date().getFullYear()} The Ivy, all rights reserved.
         </p>
         <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-cyan-400">

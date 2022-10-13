@@ -64,7 +64,7 @@ export function AccountCreateForm() {
   return (
     <div className="flex justify-center my-24 px-4">
       <div className="max-w-md w-full">
-        <h1 className="text-4xl">Create an Account.</h1>
+        <h1 className="text-4xl font-thin">Create an account</h1>
         <form noValidate className="pt-6 pb-8 mt-4 mb-4" onSubmit={onSubmit}>
           {submitError && (
             <div className="flex items-center justify-center mb-6 bg-zinc-500">
@@ -122,7 +122,7 @@ export function AccountCreateForm() {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-gray-900 text-contrast rounded py-2 px-4 focus:shadow-outline block w-full"
+              className="bg-neon-pink text-contrast rounded py-2 px-4 focus:shadow-outline block w-full"
               type="submit"
             >
               Create Account
@@ -131,7 +131,7 @@ export function AccountCreateForm() {
           <div className="flex items-center mt-4">
             <p className="align-baseline text-sm">
               Already have an account? &nbsp;
-              <Link className="inline underline" to="/account">
+              <Link className="inline underline text-neon-pink" to="/account">
                 Sign in
               </Link>
             </p>

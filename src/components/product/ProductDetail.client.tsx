@@ -32,10 +32,7 @@ export function ProductDetail({
           </Disclosure.Button>
 
           <Disclosure.Panel className={'pb-4 pt-2 grid gap-2'}>
-            <div
-              className="prose dark:prose-invert"
-              dangerouslySetInnerHTML={{__html: content}}
-            />
+            <div dangerouslySetInnerHTML={{__html: content}} />
             {learnMore && (
               <div className="">
                 <Link

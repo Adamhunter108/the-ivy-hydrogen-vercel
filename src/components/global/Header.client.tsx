@@ -117,7 +117,7 @@ function MobileHeader({
 
       <Link
         className="flex items-center self-stretch leading-[3rem] md:leading-[4rem] justify-center flex-grow w-full h-full"
-        to="/"
+        to="https://www.theivylbny.com/"
       >
         <Heading
           className="font-bold text-center pt-6"
@@ -176,7 +176,7 @@ function DesktopHeader({
   return (
     <header role="banner" className={styles.container}>
       <div className="flex gap-12">
-        <Link className={`font-bold`} to="/">
+        <Link className={`font-bold`} to="https://www.theivylbny.com/">
           {/* {title} */}
           <div className="pt-6">
             <Image
@@ -190,13 +190,29 @@ function DesktopHeader({
         <div className="pt-8 text-neon-pink font-medium text-base">
           <nav className="flex gap-8">
             {/* Top level menu items */}
-            {(menu?.items || []).map((item) => (
+            {/* {(menu?.items || []).map((item) => (
               <Link key={item.id} to={item.to} target={item.target}>
                 <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   {item.title}
                 </div>
               </Link>
-            ))}
+            ))} */}
+            {/* 👆 OG 👇 NEW */}
+            <Link to="/">
+              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                Shop Home
+              </div>
+            </Link>
+            <Link to="/products">
+              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                Catalog
+              </div>
+            </Link>
+            <Link to="https://www.theivylbny.com/event-list">
+              <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                Events
+              </div>
+            </Link>
           </nav>
         </div>
       </div>

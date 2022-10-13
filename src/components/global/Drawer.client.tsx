@@ -70,13 +70,13 @@ function Drawer({
                     {heading !== null && (
                       <Dialog.Title>
                         <Heading as="span" size="lead" id="cart-contents">
-                          {heading}
+                          <div className="font-thin text-3xl"> {heading}</div>
                         </Heading>
                       </Dialog.Title>
                     )}
                     <button
                       type="button"
-                      className="p-4 -m-4 transition text-primary hover:text-primary/50"
+                      className="p-4 -m-4 transition text-primary hover:text-neon-pink"
                       onClick={onClose}
                     >
                       <IconClose aria-label="Close panel" />
