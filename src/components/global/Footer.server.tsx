@@ -1,6 +1,7 @@
 import {useUrl} from '@shopify/hydrogen';
 
-import {Section, Heading, FooterMenu, CountrySelector} from '~/components';
+// import {Section, Heading, FooterMenu, CountrySelector} from '~/components';
+import {Section} from '~/components';
 import type {EnhancedMenu} from '~/lib/utils';
 
 /**
@@ -24,22 +25,27 @@ export function Footer({menu}: {menu?: EnhancedMenu}) {
       divider={isHome ? 'none' : 'top'}
       as="footer"
       role="contentinfo"
-      className={`grid min-h-[25rem] items-start grid-flow-row w-full gap-6 py-8 px-6 md:px-8 lg:px-12 
+      className={`grid min-h-14 items-start grid-flow-row w-full gap-6 py-8 px-6 md:px-8 lg:px-12 
         border-b md:gap-8 lg:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-${itemsCount}
         bg-primary dark:bg-contrast dark:text-primary text-contrast overflow-hidden`}
     >
-      <FooterMenu menu={menu} />
+      {/* <FooterMenu menu={menu} />
       <section className="grid gap-4 w-full md:max-w-[335px] md:ml-auto">
         <Heading size="lead" className="cursor-default" as="h3">
           Country
         </Heading>
         <CountrySelector />
-      </section>
+      </section> */}
       <div
-        className={`self-end pt-8 opacity-50 md:col-span-2 lg:col-span-${itemsCount}`}
+        className={`self-end pt-8 opacity-80 md:col-span-2 lg:col-span-${itemsCount}`}
       >
-        &copy; {new Date().getFullYear()} / Shopify, Inc. Hydrogen is an MIT
-        Licensed Open Source project. This website is carbon&nbsp;neutral.
+        <p className="opacity-50 text-sm">
+          &copy; {new Date().getFullYear()} The Ivy, all rights reserved.
+        </p>
+        <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-cyan-400">
+          Made with <span className="text-red-600">❤️</span> in NYC by
+          <a href="mailto:info@whiterabbitdesign.studio">White Rabbit Design</a>
+        </p>
       </div>
     </Section>
   );
