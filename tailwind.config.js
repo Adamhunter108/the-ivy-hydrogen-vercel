@@ -19,6 +19,7 @@ module.exports = {
         contrast: withOpacityValue('--color-contrast'),
         notice: withOpacityValue('--color-accent'),
         shopPay: 'var(--color-shop-pay)',
+        'neon-pink': '#Fa2fbd',
       },
       screens: {
         sm: '32em',

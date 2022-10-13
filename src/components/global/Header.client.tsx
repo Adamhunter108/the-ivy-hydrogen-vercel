@@ -1,5 +1,6 @@
 import {Link, useUrl, useCart} from '@shopify/hydrogen';
 import {useWindowScroll} from 'react-use';
+import {Image} from '@shopify/hydrogen';
 
 import {
   Heading,
@@ -63,7 +64,7 @@ export function Header({title, menu}: {title: string; menu?: EnhancedMenu}) {
 
 function MobileHeader({
   countryCode,
-  title,
+  // title,
   isHome,
   openCart,
   openMenu,
@@ -80,7 +81,7 @@ function MobileHeader({
     button: 'relative flex items-center justify-center w-8 h-8',
     container: `${
       isHome
-        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary'
         : 'bg-contrast/80 text-primary'
     } ${
       y > 50 && !isHome ? 'shadow-lightHeader ' : ''
@@ -118,8 +119,17 @@ function MobileHeader({
         className="flex items-center self-stretch leading-[3rem] md:leading-[4rem] justify-center flex-grow w-full h-full"
         to="/"
       >
-        <Heading className="font-bold text-center" as={isHome ? 'h1' : 'h2'}>
-          {title}
+        <Heading
+          className="font-bold text-center pt-6"
+          as={isHome ? 'h1' : 'h2'}
+        >
+          {/* {title} */}
+          <Image
+            src="https://www.theivylbny.com/images/the-ivy.png"
+            width={80}
+            height={35}
+            alt="The Ivy logo"
+          />
         </Heading>
       </Link>
 
@@ -156,27 +166,39 @@ function DesktopHeader({
       'relative flex items-center justify-center w-8 h-8 focus:ring-primary/5',
     container: `${
       isHome
-        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary'
         : 'bg-contrast/80 text-primary'
     } ${
       y > 50 && !isHome ? 'shadow-lightHeader ' : ''
-    }hidden h-nav lg:flex items-center sticky transition duration-300 backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-8 px-12 py-8`,
+    }hidden h-nav lg:flex items-center sticky transition duration-300 backdrop-blur-lg z-40 top-0 justify-between w-full h-10 leading-none gap-8 px-12 py-8`,
   };
 
   return (
     <header role="banner" className={styles.container}>
       <div className="flex gap-12">
         <Link className={`font-bold`} to="/">
-          {title}
+          {/* {title} */}
+          <div className="pt-6">
+            <Image
+              src="https://www.theivylbny.com/images/the-ivy.png"
+              width={108}
+              height={55}
+              alt="The Ivy logo"
+            />
+          </div>
         </Link>
-        <nav className="flex gap-8">
-          {/* Top level menu items */}
-          {(menu?.items || []).map((item) => (
-            <Link key={item.id} to={item.to} target={item.target}>
-              {item.title}
-            </Link>
-          ))}
-        </nav>
+        <div className="pt-8 text-neon-pink font-medium text-base">
+          <nav className="flex gap-8">
+            {/* Top level menu items */}
+            {(menu?.items || []).map((item) => (
+              <Link key={item.id} to={item.to} target={item.target}>
+                <div className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                  {item.title}
+                </div>
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
       <div className="flex items-center gap-1">
         <form
