@@ -1,9 +1,11 @@
 # the-ivy-hydrogen-vercel 
 
 ### ℹ️ `About:` 
-A custom headless Shopify storefront for The Ivy Long Beach, NY.  
+A custom headless Shopify storefront for The Ivy in Long Beach, NY.  
 
-This is built with Shopify's [Hydrogen](https://shopify.dev/custom-storefronts/hydrogen) React framework, styled with Tailwind CSS and deployed continuously to Vercel via Git.
+This project is built with `Shopify`'s [Hydrogen](https://shopify.dev/custom-storefronts/hydrogen) `React` framework, styled with `Tailwind CSS` and deployed continuously to `Vercel` via this `Git` repository.  
+
+This project is deployed to a subdomain ([shop.theivylbny.com](shop.theivylbny.com)) of a custom `Next.js` project ([github.com/Adamhunter108/the-ivy](https://github.com/Adamhunter108/the-ivy)).
 
 
 ### 📚 `Tech Stack:`
