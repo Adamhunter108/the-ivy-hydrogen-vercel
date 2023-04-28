@@ -72,7 +72,7 @@ export function Hero({
             </div>
           )} */}
           <Image
-            src="/images/ivy-wall-16x80.jpg"
+            src="/images/ivy-wall-16x80-w-logo.jpg"
             className="block object-cover w-full h-full"
             width={5000}
             height={3155}

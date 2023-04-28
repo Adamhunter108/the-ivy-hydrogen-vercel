@@ -40,9 +40,16 @@ export function Footer({menu}: {menu?: EnhancedMenu}) {
         <p className="opacity-50 text-sm xl:text-center ">
           &copy; {new Date().getFullYear()} The Ivy, all rights reserved.
         </p>
-        <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-cyan-400">
+        <p className="xl:text-center lg:text-left text-sm text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-cyan-600">
           Made with <span className="text-red-600">❤️</span> in NYC by
-          <a href="mailto:info@whiterabbitdesign.studio">White Rabbit Design</a>
+          <a
+            className="hover:text-black hover:font-bold"
+            href="https://www.whiterabbitdesign.studio/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            White Rabbit Design
+          </a>
         </p>
       </div>
     </Section>
