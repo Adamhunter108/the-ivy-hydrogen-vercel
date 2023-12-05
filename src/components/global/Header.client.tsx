@@ -120,14 +120,14 @@ function MobileHeader({
         to="https://www.theivylbny.com/"
       >
         <Heading
-          className="font-bold text-center pt-6"
+          className="font-bold text-center pt-4"
           as={isHome ? 'h1' : 'h2'}
         >
           {/* {title} */}
           <Image
-            src="https://www.theivylbny.com/images/the-ivy.png"
-            width={80}
-            height={35}
+            src="https://www.theivylbny.com/images/theivy-black.png"
+            width={45}
+            height={45}
             alt="The Ivy logo"
           />
         </Heading>
@@ -178,10 +178,10 @@ function DesktopHeader({
       <div className="flex gap-12">
         <Link className={`font-bold`} to="https://www.theivylbny.com/">
           {/* {title} */}
-          <div className="pt-6">
+          <div className="pt-4">
             <Image
-              src="https://www.theivylbny.com/images/the-ivy.png"
-              width={108}
+              src="https://www.theivylbny.com/images/theivy-black.png"
+              width={55}
               height={55}
               alt="The Ivy logo"
             />
